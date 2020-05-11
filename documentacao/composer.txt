@@ -1,0 +1,32 @@
+https://getcomposer.org/
+
+Fazer o donwload -> composer-Setup.exe 
+
+outra maneira
+
+Latest Snapshot donwload do arquivo composer.phar e colocar na raiz.
+
+Precisaremos de um arquivo json
+
+clicar na documentação -> Basic usage 
+
+A requirechave #
+A primeira (e muitas vezes apenas) coisa em que você especifica composer.jsoné a requirechave. Você está simplesmente dizendo ao Composer quais pacotes o seu projeto depende.
+
+{
+    "require": {
+        "monolog/monolog": "1.0.*"
+    }
+}
+Como você pode ver, requirepega um objeto que mapeia nomes de pacotes (por exemplo monolog/monolog) para restrições de versão (por exemplo 1.0.*).
+
+smarty composer -> https://github.com/smarty-php/smarty
+
+"require": {
+    "smarty/smarty": "~3.1"
+}
+
+instalando o composer
+
+c:\xampp\php\php.exe composer.phar install
+
