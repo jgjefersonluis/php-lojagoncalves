@@ -6,7 +6,8 @@ class Config
 
     const SITE_URL = "http://localhost";
     const SITE_PASTA = "lojagoncalves";
-    const SITE_NOME = "Loja do Gonçalves - php 7 e MySQL";
+    // const SITE_PASTA = ""; -> na raiz do servidor
+    const SITE_NOME = "Loja Gonçalves";
     const SITE_EMAIL_ADM = "jefersonluis.educx@gmail.com";
 
     //INFORMAÇÕES DO BANCO DE DADOS

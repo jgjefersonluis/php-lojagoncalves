@@ -1,6 +1,6 @@
 <?php
 
-Class Template extends Smarty{
+Class Template extends SmartyBC{
     function __construct(){
         
         parent:: __construct();
@@ -10,8 +10,3 @@ Class Template extends Smarty{
         $this->setCacheDir('view/cache/');
     }
 }
-
-?>
-
-
-
