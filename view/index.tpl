@@ -150,6 +150,10 @@
             
             <!-- começa div rodape -->
             <div class="row" id="rodape">
+                <center>
+                    <h4>{$TITULO_SITE}</h4>
+                    <p>Rua Doutor Flores, 230. Porto Alegre/Centro Historico</p>
+                </ceenter>
             
             
             </div><!-- fim div rodape-->

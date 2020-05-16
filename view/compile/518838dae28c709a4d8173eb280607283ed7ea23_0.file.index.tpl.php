@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.36, created on 2020-05-15 18:13:50
+/* Smarty version 3.1.36, created on 2020-05-16 02:54:52
   from 'C:\xampp\htdocs\lojagoncalves\view\index.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.36',
-  'unifunc' => 'content_5ebebfbe324369_89276832',
+  'unifunc' => 'content_5ebf39dc64d7f3_33258779',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '518838dae28c709a4d8173eb280607283ed7ea23' => 
     array (
       0 => 'C:\\xampp\\htdocs\\lojagoncalves\\view\\index.tpl',
-      1 => 1589559227,
+      1 => 1589590489,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ebebfbe324369_89276832 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ebf39dc64d7f3_33258779 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 
 <html>
@@ -196,6 +196,11 @@ function content_5ebebfbe324369_89276832 (Smarty_Internal_Template $_smarty_tpl)
             
             <!-- começa div rodape -->
             <div class="row" id="rodape">
+                <center>
+                    <h4><?php echo $_smarty_tpl->tpl_vars['TITULO_SITE']->value;?>
+</h4>
+                    <p>Rua Doutor Flores, 230. Porto Alegre/Centro Historico</p>
+                </ceenter>
             
             
             </div><!-- fim div rodape-->
