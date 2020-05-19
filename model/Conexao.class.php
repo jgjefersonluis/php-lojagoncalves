@@ -2,7 +2,10 @@
 
 class Conexao extends Config
 {
+
     private $host, $user, $senha, $banco;
+
+    protected $obj, $itens = array(), $prefix;
 
     function __construct()
     {
@@ -48,5 +51,15 @@ class Conexao extends Config
     function ListarDados()
     {
         return $this->obj->fetch(PDO::FETCH_ASSOC);
+    }
+
+    function TotalDados()
+    {
+        return $this->obj->rowCount();
+    }
+
+    function GetItens()
+    {
+        return $this->itens;
     }
 }

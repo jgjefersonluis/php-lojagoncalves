@@ -6,7 +6,7 @@
 <div class="container">
     <div class="row">
         
-        <form class="form-horizontal" id="frmcontatoazul">
+        <form class="form-horizontal" id="frmcontatoazul" action="envio">
         <fieldset>
         
         <!-- Form Name -->
