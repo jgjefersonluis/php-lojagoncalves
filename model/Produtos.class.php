@@ -19,6 +19,19 @@ class Produtos extends Conexao
         $this->GetLista();
     }
 
+    function GetProdutosID()
+    {
+        //query para buscar os produtos de uma categoria especifica
+
+        $query = "SELECT * FROM {$this->prefix}produtos p INNER JOIN {$this->prefix}categorias c ON p.pro_categoria = c.cate_id";
+
+        //$query .= "ORDER BY pro_id DESC";
+
+        $this->ExecuteSQL($query);
+
+        $this->GetLista();
+    }
+
     private function GetLista()
     {
         $i = 1;
@@ -32,7 +45,7 @@ class Produtos extends Conexao
                 'pro_altura' => $lista['pro_altura'],
                 'pro_largura' => $lista['pro_largura'],
                 'pro_comprimento' => $lista['pro_comprimento'],
-                'pro_img' => $lista['pro_img'],
+                'pro_img' => Rotas::ImageLink($lista['pro_img'], 180, 180),
                 'pro_slug' => $lista['pro_slug'],
                 'cate_nome' => $lista['cate_nome'],
                 'cate_id'   => $lista['cate_id']
